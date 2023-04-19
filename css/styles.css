@@ -2,25 +2,94 @@
   --prima-text-color: rgba(67, 68, 85, 1);
   --title-text-color: rgba(46, 47, 66, 1);
   --accent-color: rgba(77, 90, 229, 1);
-  --prima-white-color: #ffffff;
-  --secondary-color: rgba(244, 244, 253, 1);
+  --prima-white-color: rgb(255, 255, 255);
+  --secondary-color: rgb(244, 244, 253);
+  --title-bg-color: rgba(46, 47, 66, 1);
+  --btn-bg-color: rgb(64, 75, 191);
 }
+
 body {
   font-family: "Roboto", sans-serif;
 
-  color: #434455;
-  background-color: #ffffff;
+  color: var(--prima-text-color);
+  background-color: var(--prima-white-color);
 }
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
 .list {
   list-style: none;
 }
+
 .link {
   text-decoration: none;
-
-  /* Main*/
-
-  /* ===============Header================= */
 }
+
+.container {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+  color: var(--title-text-color);
+
+}
+
+.title-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+}
+
+/* Main*/
+
+/* ===============Header================= */
+.page-header {
+  padding-top: 36px;
+  padding-bottom: 36;
+}
+
+.page-header-container {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #E7E9FC;
+}
+
+.page-nav {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -28,7 +97,8 @@ body {
   line-height: 1.72;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #2e2f42;
+  color: var(--title-text-color);
+  margin-right: 76px;
 }
 
 .menu-logo {
@@ -38,7 +108,20 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #4d5ae5;
+  color: var(--accent-color);
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 40px;
 }
 
 .menu-link {
@@ -46,15 +129,19 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--title-text-color);
 }
 
 .link:hover,
 .link:focus {
-  color: #404bbf;
+  color: var(--accent-color);
 }
 
 /*-- Address --*/
+.address {
+  display: flex;
+  align-items: center;
+}
 
 .contact {
   font-weight: 400;
@@ -62,28 +149,38 @@ body {
   font-style: normal;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--prima-text-color);
+  margin-left: auto;
+  margin-right: 40px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .contact:hover,
 .contact:focus {
-  color: #404bbf;
+  color: var(--accent-color);
 }
-/* ===============Header================== */
 
 /* ===============Hero section============ */
 
 .hero {
-  background-color: #2e2f42;
+  display: flex;
+  height: 590.57px;
+  background-color: var(--title-bg-color);
 }
+
 .hero-title {
+  max-width: 496px;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
-  color: #ffffff;
+  color: var(--prima-white-color);
   letter-spacing: 0.02em;
-  background: #2e2f42;
+  padding-top: 164px;
+  margin-left: auto;
+  margin-right: auto;
+  background: var(--title-text-color);
 }
 
 .modal-btn {
@@ -94,58 +191,119 @@ body {
   display: flex;
   align-items: center;
   letter-spacing: 0.04em;
+  border-radius: 4px;
+  padding-top: 16px;
+  padding-right: 32px;
+  padding-bottom: 16px;
+  padding-left: 32px;
   cursor: pointer;
-  background: #4d5ae5;
-  color: #ffffff;
+  margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  background: var(--accent-color);
+  color: var(--prima-white-color);
 }
 
 .modal-btn:hover,
 .modal-btn:focus,
 .modal-btn:active {
-  background: #404bbf;
-  color: #ffffff;
+  background: var(--btn-bg-color);
+  color: var(--prima-white-color);
 }
-/* ===================Hero section============ */
 
 /* ===========Objectives section============= */
 .section {
-  background-color: #ffffff;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  /*background-color: var(--prima-white-color);*/
 }
 
-.section-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color: #2e2f42;
-  background-color: #ffffff;
+.goal {
+  display: flex;
 }
-.title-name {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
+
+.goal-item:not(:last-child) {
+  margin-right: 24px;
 }
-.features-text {
+
+.goal-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  width: 264px;
+  margin-top: 8px;
+  color: var(--prima-text-color);
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*=======Devices section=======*/
+.devices-section {
+  padding-top: 0px;
+}
+
+.devices {
+  display: flex;
+}
+
+.devices-images:not(:last-child) {
+  margin-right: 24px;
+}
+
+/*=======Team section=======*/
+
+.team {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .team-section {
-  background-color: #f4f4fd;
+  padding-top: 0px;
+  background-color: var(--secondary-color);
 }
+
 .team-work {
-  background-color: #ffffff;
+  text-align: center;
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--prima-white-color);
 }
+
+.team-card-wrapper {
+  padding-top: 32px;
+  padding-left: 16px;
+  padding-bottom: 32px;
+  padding-right: 16px;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-features-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-top: 8px;
+  color: var(--prima-text-color);
+}
+
 /*-- Footer --*/
 .page-footer {
-  background-color: #2e2f42;
+  background-color: var(--title-bg-color);
 }
+
 .footer-menu-logo {
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -156,7 +314,7 @@ body {
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #4d5ae5;
+  color: var(--accent-color);
 }
 
 .footer-logo {
@@ -169,45 +327,89 @@ body {
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #f4f4fd;
+  color: var(--secondary-color);
 }
+
 .footer-text {
+  width: 264px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #f4f4fd;
+  margin-top: 16px;
+  color: var(--secondary-color);
+}
+
+.page-footer-container {
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 156px;
 }
 
 /*-- Portfolio --*/
 
 .page-main {
-  background-color: #ffffff;
+  background-color: var(--prima-white-color);
 }
-* .filters-button {
+
+.filters {
+  display: inline-block;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
+.filters-button {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   display: flex;
-  align-items: center;
+  border-radius: 4px;
   text-align: center;
   letter-spacing: 0.04em;
   cursor: pointer;
-  background: #f4f4fd;
-  color: #4d5ae5;
+  padding-top: 12px;
+  padding-left: 24px;
+  padding-bottom: 12px;
+  padding-right: 24px;
+  background: var(--secondary-color);
+  color: var(--accent-color);
 }
+
 .filters-button:hover,
 .filters-button:focus,
 .filters-button:active {
-  background: #404bbf;
-  color: #ffffff;
+  background: var(--btn-bg-color);
+  color: var(--prima-white-color);
 }
 
-.market-text {
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+  margin-top: 72px;
+}
+
+.products-images {
+  border: 1px solid #E7E9FC;
+  border-top: none
+}
+
+
+.features-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  margin-top: 8px;
+  color: var(--prima-text-color);
+}
+
+.content-card-wrapper {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
 }
