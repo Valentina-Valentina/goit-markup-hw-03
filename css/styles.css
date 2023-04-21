@@ -420,7 +420,7 @@ img {
 .products-images {
   border-top: none;
   width: calc((100% - 48px) / 3);
-  border: 1px solid #E7E9FC;
+  border: 1px solid var(--secondary-btn-bg-color);
 }
 
 .features-text {
@@ -434,6 +434,6 @@ img {
 .content-card-wrapper {
   padding-top: 32px;
   padding: 32px 16px;
+  border: 1px solid var(--secondary-btn-bg-color);
   border-top: none;
-  border: 1px solid #e7e9fc;
 }
