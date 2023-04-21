@@ -113,9 +113,10 @@ img {
   line-height: 1.72;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  padding: 24px 0;
   color: var(--title-text-color);
   margin-right: 76px;
-  padding: 24px 0;
+
 }
 
 .menu {
@@ -137,6 +138,7 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+  padding: 24px 0;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
 }
@@ -340,7 +342,7 @@ img {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
-  display: flex;
+  display: inline-block;
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -416,6 +418,7 @@ img {
 }
 
 .products-images {
+  border-top: none;
   width: calc((100% - 48px) / 3);
   border: 1px solid #E7E9FC;
 }
