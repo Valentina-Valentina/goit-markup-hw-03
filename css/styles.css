@@ -107,7 +107,7 @@ img {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.72;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
@@ -123,9 +123,8 @@ img {
   margin-right: 40px;
 }
 
-.menu-item {
-  padding: 24px 0;
-}
+.menu-item {}
+
 
 .menu-link {
   display: block;
